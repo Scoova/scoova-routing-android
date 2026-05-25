@@ -44,6 +44,6 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ## 1.0.0 — 2026-05-04
 
-First public release. Standalone Valhalla routing client for
+First public release. Routing client for
 `routing.scoo-va.info` with the eight endpoints listed above and a built-in
 polyline6 decoder.

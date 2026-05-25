@@ -1,6 +1,6 @@
 # scoova-routing-android
 
-Standalone Valhalla routing client for `routing.scoo-va.info`. JVM library —
+Routing client for `routing.scoo-va.info`. JVM library —
 works in Android apps **and** server-side Kotlin / KMP projects.
 
 ## Install

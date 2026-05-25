@@ -17,7 +17,7 @@ typealias RoutingHttp = suspend (
 ) -> Pair<Int, String>
 
 /**
- * Standalone Valhalla routing client for the Scoova routing gateway
+ * Routing client for the Scoova routing gateway
  * (`api.scoo-va.info/api/v1/routing`).
  *
  * Eight endpoints: route, optimizedRoute, isochrone, matrix, height
@@ -204,7 +204,7 @@ class RoutingClient(
     }
 }
 
-/** Decode a Valhalla polyline6 string. */
+/** Decode a polyline (precision 6, Google-format) string. */
 fun decodePolyline(encoded: String, precision: Int = 6): List<LatLng> {
     val coords = mutableListOf<LatLng>()
     val factor = Math.pow(10.0, precision.toDouble())

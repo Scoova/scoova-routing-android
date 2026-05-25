@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "info.scoo-va"
-version = "1.1.2"
+version = "1.1.3"
 
 repositories {
     mavenCentral()
@@ -49,7 +49,7 @@ publishing {
 
             pom {
                 name.set("Scoova Routing SDK (Android / JVM)")
-                description.set("Standalone Valhalla routing client for the Scoova routing gateway.")
+                description.set("Routing client for the Scoova routing gateway.")
                 url.set("https://github.com/Scoova/scoova-routing-android")
                 licenses {
                     license {
