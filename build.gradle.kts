@@ -44,7 +44,7 @@ publishing {
             from(components["java"])
 
             groupId = "info.scoo-va"
-            artifactId = "scoova-routing"
+            artifactId = "scoova-routing-android"
             version = project.version.toString()
 
             pom {
