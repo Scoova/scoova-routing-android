@@ -101,7 +101,8 @@ publishing {
 // Packages), signing is skipped.
 signing {
     val signingKey: String? = System.getenv("SIGNING_KEY")
-    val signingPassword: String? = System.getenv("SIGNING_PASSWORD")
+    // For a passphrase-less key, useInMemoryPgpKeys needs empty string, not null
+    val signingPassword: String = System.getenv("SIGNING_PASSWORD") ?: ""
     isRequired = signingKey != null
     if (signingKey != null) {
         useInMemoryPgpKeys(signingKey, signingPassword)
