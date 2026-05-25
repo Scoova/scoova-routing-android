@@ -5,17 +5,10 @@ works in Android apps **and** server-side Kotlin / KMP projects.
 
 ## Install
 
-JitPack:
-
-```kotlin
-repositories { maven { url = uri("https://jitpack.io") } }
-dependencies { implementation("com.github.Scoova:scoova-routing-android:1.1.0") }
-```
-
 Maven Central (once the namespace claim is complete):
 
 ```kotlin
-dependencies { implementation("info.scoo-va:scoova-routing:1.1.0") }
+dependencies { implementation("info.scoo-va:scoova-routing-android:1.1.3") }
 ```
 
 ## Usage
