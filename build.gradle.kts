@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "info.scoo-va"
-version = "1.1.0"
+version = "1.1.1"
 
 repositories {
     mavenCentral()
@@ -49,7 +49,7 @@ publishing {
 
             pom {
                 name.set("Scoova Routing SDK (Android / JVM)")
-                description.set("Standalone Valhalla routing client for routing.scoo-va.info — route, optimizedRoute, isochrone, matrix, height (elevation), mapMatch, locate, status. Polyline6 decode included.")
+                description.set("Standalone Valhalla routing client for the Scoova routing gateway (api.scoo-va.info/api/v1/routing) — route, optimizedRoute, isochrone, matrix, height (elevation), mapMatch, locate, status. Polyline6 decode included.")
                 url.set("https://github.com/Scoova/scoova-routing-android")
 
                 licenses {

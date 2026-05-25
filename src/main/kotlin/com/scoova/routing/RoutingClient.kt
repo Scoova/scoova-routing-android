@@ -17,7 +17,8 @@ typealias RoutingHttp = suspend (
 ) -> Pair<Int, String>
 
 /**
- * Standalone Valhalla routing client for `routing.scoo-va.info`.
+ * Standalone Valhalla routing client for the Scoova routing gateway
+ * (`api.scoo-va.info/api/v1/routing`).
  *
  * Eight endpoints: route, optimizedRoute, isochrone, matrix, height
  * (alias `elevation`), mapMatch, locate, status.
@@ -25,11 +26,11 @@ typealias RoutingHttp = suspend (
  * Pass [locale] (e.g. `"fr"`, `"ar-EG"`, `"pt-BR"`) once and every request
  * carries it as both the `?locale=` query parameter and the `Accept-Language`
  * header. Per-call [RouteOptions.locale] / [IsochroneOptions.locale] overrides.
- * Default `"en"`. Pass [apiKey] when hitting the `api.scoo-va.info` gateway
- * (`/v1/routing/...`) — sent as `X-API-Key` on every request.
+ * Default `"en"`. Pass [apiKey] — required by the gateway — sent as
+ * `X-API-Key` on every request.
  */
 class RoutingClient(
-    baseUrl: String = "https://routing.scoo-va.info",
+    baseUrl: String = "https://api.scoo-va.info/api/v1/routing",
     private val defaultCosting: CostingType = CostingType.SCOOTER,
     private val timeoutMs: Int = 30_000,
     private val locale: String = "en",
